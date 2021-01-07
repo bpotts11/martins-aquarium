@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    background-color: darkblue;
+}
+
+/* h1{
+    font-size: 500%;
+} */
+
+.contentContainer{
+    display: flex;
+    /* flex: column; */
+}
+
+.containerLeft{
+    flex-basis: 75%;
+}
+
+.containerRight{
+    flex-basis: 25%;
+    background-color: seashell;
+}
+
+ .containerArticle{
+background-color: seagreen;
+}
+
+.fishCard{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    flex-basis: 10%;
+    border: 3px dotted purple;
+}
+
+.fishCard__img{
+    width: 20%;
+}
+
+.fishCard__name{
+    font-weight: bold;
+}
+
+.containerLeft__fishlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* footer{
+    display: flex;
+    background-color: darkblue;
+    border: 1px solid black;
+} */
+
+
