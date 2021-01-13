@@ -1,15 +1,12 @@
 const fishCollection = [
     {
-
         name: "Marlin",
         species: "Amphiprionanae",
         location: "Great Barrier Reef",
         length: "4 inches",
         diet: "seafood",
         image: "",
-    }
-]
-const fishCollection = [
+    },
     {
         name: "Nemo",
         species: "Amphiprionanae",
@@ -17,9 +14,7 @@ const fishCollection = [
         length: "2 inches",
         diet: "seafood",
         image: "",
-    }
-]
-const fishCollection = [
+    },
     {
         name: "Dory",
         species: "Blue Tang",
@@ -27,9 +22,7 @@ const fishCollection = [
         length: "4 inches",
         diet: "algae",
         image: "",
-    }
-]
-const fishCollection = [
+    },
     {
         name: "Gill",
         species: "Moorish Idol",
@@ -37,9 +30,7 @@ const fishCollection = [
         length: "6 inches",
         diet: "seafood",
         image: "",
-    }
-]
-const fishCollection = [
+    },
     {
         name: "Bubbles",
         species: "Yellow Tang",
@@ -47,5 +38,9 @@ const fishCollection = [
         length: "5 inches",
         diet: "herbivore",
         image: "",
-    }
+    },
 ]
+
+export const useFish = () => {
+    return fishCollection.slice()
+}
