@@ -13,7 +13,6 @@ export const TipList = () => {
         console.log(quoteHTMLRepresentations)
     }
 
-
     contentElement.innerHTML += `
         <article class="containerLeft__quoteList contentArticle">
             ${quoteHTMLRepresentations}

@@ -20,3 +20,15 @@ for (const quote of allTheQuote) {
 }
 
 TipList()
+
+
+import { useLocation } from './locations/LocationDataProvider.js'
+import { LocationList } from './locations/LocationList.js'
+
+const allTheLocation = useLocation()
+
+for (const location of allTheLocation) {
+    console.log(location)
+}
+
+LocationList()
