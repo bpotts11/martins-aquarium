@@ -10,7 +10,6 @@ export const LocationList = () => {
     for (const location of locations) {
 
         locationHTMLRepresentations += Location(location)
-        console.log(locationHTMLRepresentations)
     }
 
     contentElement.innerHTML += `

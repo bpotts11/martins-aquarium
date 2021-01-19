@@ -10,7 +10,6 @@ export const TipList = () => {
     for (const quote of quotes) {
 
         quoteHTMLRepresentations += Quote(quote)
-        console.log(quoteHTMLRepresentations)
     }
 
     contentElement.innerHTML += `
