@@ -1,0 +1,50 @@
+h3 {
+    font-size: 2em;
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.containerLeft__fishList, .containerLeft__locationList, .containerLeft__quoteList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    background-color: #06749350;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.fishCard, .locationCard {
+    background-color: #09A9C8;
+    width: 200px;
+    margin: 0;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+.quoteCard{
+    background-color: #09A9C8;
+    width: 180px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.fishCard__info, .locationCard__info, .quoteCard__info{
+    margin: 0;
+    text-align: center;
+}
+.fishCard--name{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fishCard__image, .locationCard__image{
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

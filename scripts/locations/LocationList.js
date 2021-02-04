@@ -14,6 +14,7 @@ export const LocationList = () => {
 
     contentElement.innerHTML += `
         <article class="containerLeft__locationList contentArticle">
+        <h2 id="location">Locations</h2>
             ${locationHTMLRepresentations}
         </article>
         `

@@ -14,6 +14,7 @@ export const TipList = () => {
 
     contentElement.innerHTML += `
         <article class="containerLeft__quoteList contentArticle">
+        <h2 id="tips">Tips</h2>
             ${quoteHTMLRepresentations}
         </article>
         `
