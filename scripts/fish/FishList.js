@@ -1,37 +1,43 @@
 import { mostHolyFish, nonHolyFish, soldierFish, useFish } from "./FishDataProvider.js"
 import { Fish } from "./Fish.js"
 
+const buildFishListHTML = (arrayOfFish, heading) => {
+
+    let fishHTMLRepresentation = `<h3>${heading}</h3>`
+    for (const fishObj of arrayOfFish) {
+
+        fishHTMLRepresentation += Fish(fishObj)
+        // console.log(fishHTMLRepresentation)
+    }
+    return fishHTMLRepresentation
+}
+
 export const FishList = () => {
 
     const contentElement = document.querySelector(".containerLeft")
 
-    const fishArray = useFish()
-
-
+    // Holy Fish
     const holyFishArray = mostHolyFish()
+
+    const holyFishHTMLRepresentation = buildFishListHTML(holyFishArray, "Holy Fish")
+
+    // Soldier Fish
     const soldierFishArray = soldierFish()
+
+    const soldierFishHTMLRepresentation = buildFishListHTML(soldierFishArray, "Soldier Fish")
+
+    // Regular Fish
     const regularFishArray = nonHolyFish()
 
-    let holyFishHTMLRepresentation = "<h3>Holy Fish</h3>"
-    for (const fishObj of holyFishArray) {
-        holyFishHTMLRepresentation += Fish(fishObj)
-    }
+    const regularFishHTMLRepresentation = buildFishListHTML(regularFishArray, "Regular Fish")
 
-    let soldierFishHTMLRepresentation = "<h3>Soldier Fish</h3>"
-    for (const fishObj of soldierFishArray) {
-        soldierFishHTMLRepresentation += Fish(fishObj)
-    }
-
-    let regularFishHTMLRepresentations = "<h3>Regular Fish</h3>"
-    for (const fishObj of regularFishArray) {
-        regularFishHTMLRepresentations += Fish(fishObj)
-    }
 
     contentElement.innerHTML += `
         <article class="containerLeft__fishList contentArticle">
+        <h2 id="fish">Fish</h2>
         ${holyFishHTMLRepresentation} 
         ${soldierFishHTMLRepresentation}   
-        ${regularFishHTMLRepresentations}
+        ${regularFishHTMLRepresentation}
         </article>
         `
 }
