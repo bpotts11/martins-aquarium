@@ -1,4 +1,4 @@
-const fishCollection = [
+let fishCollection = [
     {
         image: "https://nemobhjj.weebly.com/uploads/2/2/4/1/22414564/4502720.jpeg?428",
         name: "Marlin",

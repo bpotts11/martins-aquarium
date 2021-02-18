@@ -1,4 +1,4 @@
-const quoteCollection = [
+let quoteCollection = [
     {
         text: "Fish aren't made to be in a box, kid...",
         author: "Gil",
